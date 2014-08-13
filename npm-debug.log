@@ -1,0 +1,534 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.3/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'yo',
+1 verbose cli   'grunt-cli',
+1 verbose cli   'bower' ]
+2 info using npm@1.2.17
+3 info using node@v0.10.3
+4 verbose read json /usr/local/share/npm/lib/package.json
+5 verbose read json /usr/local/share/npm/lib/package.json
+6 verbose cache add [ 'yo', null ]
+7 verbose cache add name=undefined spec="yo" args=["yo",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'yo',
+8 verbose parsed url   path: 'yo',
+8 verbose parsed url   href: 'yo' }
+9 verbose cache add [ 'grunt-cli', null ]
+10 verbose cache add name=undefined spec="grunt-cli" args=["grunt-cli",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'grunt-cli',
+11 verbose parsed url   path: 'grunt-cli',
+11 verbose parsed url   href: 'grunt-cli' }
+12 verbose cache add [ 'bower', null ]
+13 verbose cache add name=undefined spec="bower" args=["bower",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'bower',
+14 verbose parsed url   path: 'bower',
+14 verbose parsed url   href: 'bower' }
+15 silly lockFile c41975d1-yo yo
+16 verbose lock yo /Users/tyler_courtenay/.npm/c41975d1-yo.lock
+17 silly lockFile 671ef8ac-grunt-cli grunt-cli
+18 verbose lock grunt-cli /Users/tyler_courtenay/.npm/671ef8ac-grunt-cli.lock
+19 silly lockFile 206e3ce5-bower bower
+20 verbose lock bower /Users/tyler_courtenay/.npm/206e3ce5-bower.lock
+21 silly lockFile c41975d1-yo yo
+22 silly lockFile c41975d1-yo yo
+23 silly lockFile 671ef8ac-grunt-cli grunt-cli
+24 silly lockFile 671ef8ac-grunt-cli grunt-cli
+25 silly lockFile 206e3ce5-bower bower
+26 silly lockFile 206e3ce5-bower bower
+27 verbose addNamed [ 'yo', '' ]
+28 verbose addNamed [ null, '' ]
+29 silly lockFile d937c28e-yo yo@
+30 verbose lock yo@ /Users/tyler_courtenay/.npm/d937c28e-yo.lock
+31 verbose addNamed [ 'grunt-cli', '' ]
+32 verbose addNamed [ null, '' ]
+33 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+34 verbose lock grunt-cli@ /Users/tyler_courtenay/.npm/d63f3d0b-grunt-cli.lock
+35 verbose addNamed [ 'bower', '' ]
+36 verbose addNamed [ null, '' ]
+37 silly lockFile 1240aab1-bower bower@
+38 verbose lock bower@ /Users/tyler_courtenay/.npm/1240aab1-bower.lock
+39 silly addNameRange { name: 'yo', range: '', hasData: false }
+40 silly addNameRange { name: 'grunt-cli', range: '', hasData: false }
+41 silly addNameRange { name: 'bower', range: '', hasData: false }
+42 verbose url raw yo
+43 verbose url resolving [ 'https://registry.npmjs.org/', './yo' ]
+44 verbose url resolved https://registry.npmjs.org/yo
+45 info trying registry request attempt 1 at 00:05:11
+46 http GET https://registry.npmjs.org/yo
+47 verbose url raw grunt-cli
+48 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli' ]
+49 verbose url resolved https://registry.npmjs.org/grunt-cli
+50 info trying registry request attempt 1 at 00:05:11
+51 verbose etag "8LF2046OKCJZ6B962RTVWMWLA"
+52 http GET https://registry.npmjs.org/grunt-cli
+53 verbose url raw bower
+54 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+55 verbose url resolved https://registry.npmjs.org/bower
+56 info trying registry request attempt 1 at 00:05:11
+57 verbose etag "14A2IOEK7WR5EG83G4SOVJHHC"
+58 http GET https://registry.npmjs.org/bower
+59 http 304 https://registry.npmjs.org/grunt-cli
+60 silly registry.get cb [ 304,
+60 silly registry.get   { date: 'Wed, 13 Aug 2014 04:05:11 GMT',
+60 silly registry.get     server: 'Apache',
+60 silly registry.get     via: '1.1 varnish',
+60 silly registry.get     'last-modified': 'Wed, 13 Aug 2014 04:05:11 GMT',
+60 silly registry.get     'cache-control': 'max-age=60',
+60 silly registry.get     etag: '"8LF2046OKCJZ6B962RTVWMWLA"',
+60 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+60 silly registry.get     'x-cache': 'HIT',
+60 silly registry.get     'x-cache-hits': '1',
+60 silly registry.get     'x-timer': 'S1407902711.826334,VS0,VE0',
+60 silly registry.get     vary: 'Accept',
+60 silly registry.get     'content-length': '0',
+60 silly registry.get     'keep-alive': 'timeout=10, max=50',
+60 silly registry.get     connection: 'Keep-Alive' } ]
+61 verbose etag grunt-cli from cache
+62 silly addNameRange number 2 { name: 'grunt-cli', range: '', hasData: true }
+63 silly addNameRange versions [ 'grunt-cli',
+63 silly addNameRange   [ '0.1.0',
+63 silly addNameRange     '0.1.1',
+63 silly addNameRange     '0.1.2',
+63 silly addNameRange     '0.1.3',
+63 silly addNameRange     '0.1.4',
+63 silly addNameRange     '0.1.5',
+63 silly addNameRange     '0.1.6',
+63 silly addNameRange     '0.1.7',
+63 silly addNameRange     '0.1.8',
+63 silly addNameRange     '0.1.9',
+63 silly addNameRange     '0.1.10',
+63 silly addNameRange     '0.1.11',
+63 silly addNameRange     '0.1.12',
+63 silly addNameRange     '0.1.13' ] ]
+64 verbose addNamed [ 'grunt-cli', '0.1.13' ]
+65 verbose addNamed [ '0.1.13', '0.1.13' ]
+66 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+67 verbose lock grunt-cli@0.1.13 /Users/tyler_courtenay/.npm/28997503-grunt-cli-0-1-13.lock
+68 verbose read json /Users/tyler_courtenay/.npm/grunt-cli/0.1.13/package/package.json
+69 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+70 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+71 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+72 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+73 http 304 https://registry.npmjs.org/bower
+74 silly registry.get cb [ 304,
+74 silly registry.get   { date: 'Wed, 13 Aug 2014 04:05:11 GMT',
+74 silly registry.get     server: 'Apache',
+74 silly registry.get     via: '1.1 varnish',
+74 silly registry.get     'last-modified': 'Wed, 13 Aug 2014 04:05:12 GMT',
+74 silly registry.get     'cache-control': 'max-age=60',
+74 silly registry.get     etag: '"14A2IOEK7WR5EG83G4SOVJHHC"',
+74 silly registry.get     'x-served-by': 'cache-iad2133-IAD',
+74 silly registry.get     'x-cache': 'HIT',
+74 silly registry.get     'x-cache-hits': '1',
+74 silly registry.get     'x-timer': 'S1407902711.837929,VS0,VE376',
+74 silly registry.get     vary: 'Accept',
+74 silly registry.get     'content-length': '0',
+74 silly registry.get     'keep-alive': 'timeout=10, max=50',
+74 silly registry.get     connection: 'Keep-Alive' } ]
+75 verbose etag bower from cache
+76 silly addNameRange number 2 { name: 'bower', range: '', hasData: true }
+77 silly addNameRange versions [ 'bower',
+77 silly addNameRange   [ '0.1.0',
+77 silly addNameRange     '0.1.2',
+77 silly addNameRange     '0.1.3',
+77 silly addNameRange     '0.2.0',
+77 silly addNameRange     '0.3.0',
+77 silly addNameRange     '0.3.1',
+77 silly addNameRange     '0.3.2',
+77 silly addNameRange     '0.4.0',
+77 silly addNameRange     '0.5.0',
+77 silly addNameRange     '0.5.1',
+77 silly addNameRange     '0.6.0',
+77 silly addNameRange     '0.6.1',
+77 silly addNameRange     '0.6.2',
+77 silly addNameRange     '0.6.3',
+77 silly addNameRange     '0.6.4',
+77 silly addNameRange     '0.6.5',
+77 silly addNameRange     '0.6.6',
+77 silly addNameRange     '0.6.7',
+77 silly addNameRange     '0.6.8',
+77 silly addNameRange     '0.7.0',
+77 silly addNameRange     '0.7.1',
+77 silly addNameRange     '0.8.0',
+77 silly addNameRange     '0.8.1',
+77 silly addNameRange     '0.8.2',
+77 silly addNameRange     '0.8.3',
+77 silly addNameRange     '0.8.4',
+77 silly addNameRange     '0.8.5',
+77 silly addNameRange     '0.8.6',
+77 silly addNameRange     '0.9.0',
+77 silly addNameRange     '0.9.1',
+77 silly addNameRange     '0.9.2',
+77 silly addNameRange     '0.10.0',
+77 silly addNameRange     '1.0.0',
+77 silly addNameRange     '1.0.1',
+77 silly addNameRange     '1.0.2',
+77 silly addNameRange     '1.0.3',
+77 silly addNameRange     '1.1.0',
+77 silly addNameRange     '1.1.1',
+77 silly addNameRange     '1.1.2',
+77 silly addNameRange     '1.2.0',
+77 silly addNameRange     '1.2.1',
+77 silly addNameRange     '1.2.2',
+77 silly addNameRange     '1.2.3',
+77 silly addNameRange     '1.2.4',
+77 silly addNameRange     '1.2.5',
+77 silly addNameRange     '1.2.6',
+77 silly addNameRange     '1.2.7',
+77 silly addNameRange     '1.2.8',
+77 silly addNameRange     '1.3.0',
+77 silly addNameRange     '1.3.1',
+77 silly addNameRange     '1.3.2',
+77 silly addNameRange     '1.3.3',
+77 silly addNameRange     '1.3.4',
+77 silly addNameRange     '1.3.5',
+77 silly addNameRange     '1.3.6',
+77 silly addNameRange     '1.3.7',
+77 silly addNameRange     '1.3.8',
+77 silly addNameRange     '1.3.9' ] ]
+78 verbose addNamed [ 'bower', '1.3.9' ]
+79 verbose addNamed [ '1.3.9', '1.3.9' ]
+80 silly lockFile 4c0b32f5-bower-1-3-9 bower@1.3.9
+81 verbose lock bower@1.3.9 /Users/tyler_courtenay/.npm/4c0b32f5-bower-1-3-9.lock
+82 verbose read json /Users/tyler_courtenay/.npm/bower/1.3.9/package/package.json
+83 silly lockFile 4c0b32f5-bower-1-3-9 bower@1.3.9
+84 silly lockFile 4c0b32f5-bower-1-3-9 bower@1.3.9
+85 silly lockFile 1240aab1-bower bower@
+86 silly lockFile 1240aab1-bower bower@
+87 http 200 https://registry.npmjs.org/yo
+88 silly registry.get cb [ 200,
+88 silly registry.get   { date: 'Wed, 13 Aug 2014 04:05:12 GMT',
+88 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+88 silly registry.get     etag: '"C8KF832MNMRQN2Q5HZPIRXYT6"',
+88 silly registry.get     'content-type': 'application/json',
+88 silly registry.get     'cache-control': 'max-age=60',
+88 silly registry.get     'content-length': '42195',
+88 silly registry.get     'accept-ranges': 'bytes',
+88 silly registry.get     via: '1.1 varnish',
+88 silly registry.get     age: '1286',
+88 silly registry.get     'x-served-by': 'cache-iad2135-IAD',
+88 silly registry.get     'x-cache': 'HIT',
+88 silly registry.get     'x-cache-hits': '1',
+88 silly registry.get     'x-timer': 'S1407902711.831190,VS0,VE411',
+88 silly registry.get     vary: 'Accept',
+88 silly registry.get     'keep-alive': 'timeout=10, max=50',
+88 silly registry.get     connection: 'Keep-Alive' } ]
+89 silly addNameRange number 2 { name: 'yo', range: '', hasData: true }
+90 silly addNameRange versions [ 'yo',
+90 silly addNameRange   [ '1.0.0-beta.1',
+90 silly addNameRange     '1.0.0-beta.2',
+90 silly addNameRange     '1.0.0-beta.3',
+90 silly addNameRange     '1.0.0-beta.4',
+90 silly addNameRange     '1.0.0-beta.5',
+90 silly addNameRange     '1.0.0-beta.6',
+90 silly addNameRange     '1.0.0-beta.7',
+90 silly addNameRange     '1.0.0-rc.1',
+90 silly addNameRange     '1.0.0-rc.1.1',
+90 silly addNameRange     '1.0.0-rc.1.2',
+90 silly addNameRange     '1.0.0-rc.1.3',
+90 silly addNameRange     '1.0.0-rc.1.4',
+90 silly addNameRange     '1.0.0',
+90 silly addNameRange     '1.0.1',
+90 silly addNameRange     '1.0.2',
+90 silly addNameRange     '1.0.3',
+90 silly addNameRange     '1.0.4',
+90 silly addNameRange     '1.0.5',
+90 silly addNameRange     '1.0.6',
+90 silly addNameRange     '1.0.7-pre.1',
+90 silly addNameRange     '1.0.7-pre.2',
+90 silly addNameRange     '1.0.7-pre.3',
+90 silly addNameRange     '1.1.0',
+90 silly addNameRange     '1.1.1',
+90 silly addNameRange     '1.1.2' ] ]
+91 verbose addNamed [ 'yo', '1.1.2' ]
+92 verbose addNamed [ '1.1.2', '1.1.2' ]
+93 silly lockFile c4df5c1e-yo-1-1-2 yo@1.1.2
+94 verbose lock yo@1.1.2 /Users/tyler_courtenay/.npm/c4df5c1e-yo-1-1-2.lock
+95 silly lockFile b65dd06a-gistry-npmjs-org-yo-yo-1-1-2-tgz https://registry.npmjs.org/yo/-/yo-1.1.2.tgz
+96 verbose lock https://registry.npmjs.org/yo/-/yo-1.1.2.tgz /Users/tyler_courtenay/.npm/b65dd06a-gistry-npmjs-org-yo-yo-1-1-2-tgz.lock
+97 verbose addRemoteTarball [ 'https://registry.npmjs.org/yo/-/yo-1.1.2.tgz',
+97 verbose addRemoteTarball   'a0d4da72e83fa0e0dbfe1d0ba258881b240ab854' ]
+98 info retry fetch attempt 1 at 00:05:12
+99 verbose fetch to= /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/tmp.tgz
+100 http GET https://registry.npmjs.org/yo/-/yo-1.1.2.tgz
+101 http 200 https://registry.npmjs.org/yo/-/yo-1.1.2.tgz
+102 silly shasum updated bytes 7485
+103 info shasum a0d4da72e83fa0e0dbfe1d0ba258881b240ab854
+103 info shasum /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/tmp.tgz
+104 verbose tar unpack /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/tmp.tgz
+105 silly lockFile 02741a57-12315-0-9675649115815759-package /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package
+106 verbose lock /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package /Users/tyler_courtenay/.npm/02741a57-12315-0-9675649115815759-package.lock
+107 silly lockFile 03dd09ee-12315-0-9675649115815759-tmp-tgz /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/tmp.tgz
+108 verbose lock /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/tmp.tgz /Users/tyler_courtenay/.npm/03dd09ee-12315-0-9675649115815759-tmp-tgz.lock
+109 silly gunzTarPerm modes [ '755', '644' ]
+110 silly gunzTarPerm extractEntry package.json
+111 silly gunzTarPerm extractEntry cli.js
+112 silly gunzTarPerm extractEntry yoyo.js
+113 silly gunzTarPerm extractEntry readme.md
+114 silly gunzTarPerm extractEntry scripts/doctor.js
+115 silly gunzTarPerm extractEntry yeoman.txt
+116 verbose read json /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package/package.json
+117 silly lockFile 02741a57-12315-0-9675649115815759-package /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package
+118 silly lockFile 02741a57-12315-0-9675649115815759-package /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package
+119 silly lockFile 03dd09ee-12315-0-9675649115815759-tmp-tgz /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/tmp.tgz
+120 silly lockFile 03dd09ee-12315-0-9675649115815759-tmp-tgz /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/tmp.tgz
+121 verbose from cache /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package/package.json
+122 verbose tar pack [ '/Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz',
+122 verbose tar pack   '/var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package' ]
+123 verbose tarball /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+124 verbose folder /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package
+125 silly lockFile 02741a57-12315-0-9675649115815759-package /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package
+126 verbose lock /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package /Users/tyler_courtenay/.npm/02741a57-12315-0-9675649115815759-package.lock
+127 silly lockFile aa4484b8-urtenay-npm-yo-1-1-2-package-tgz /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+128 verbose lock /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz /Users/tyler_courtenay/.npm/aa4484b8-urtenay-npm-yo-1-1-2-package-tgz.lock
+129 silly lockFile 02741a57-12315-0-9675649115815759-package /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package
+130 silly lockFile 02741a57-12315-0-9675649115815759-package /var/folders/qv/nyzvj3yx2s99ryycy34dqtr80000gn/T/npm-1280/1407902712315-0.9675649115815759/package
+131 silly lockFile aa4484b8-urtenay-npm-yo-1-1-2-package-tgz /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+132 silly lockFile aa4484b8-urtenay-npm-yo-1-1-2-package-tgz /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+133 silly lockFile d51e1ccd-r-courtenay-npm-yo-1-1-2-package /Users/tyler_courtenay/.npm/yo/1.1.2/package
+134 verbose lock /Users/tyler_courtenay/.npm/yo/1.1.2/package /Users/tyler_courtenay/.npm/d51e1ccd-r-courtenay-npm-yo-1-1-2-package.lock
+135 silly lockFile d51e1ccd-r-courtenay-npm-yo-1-1-2-package /Users/tyler_courtenay/.npm/yo/1.1.2/package
+136 silly lockFile d51e1ccd-r-courtenay-npm-yo-1-1-2-package /Users/tyler_courtenay/.npm/yo/1.1.2/package
+137 verbose tar unpack /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+138 silly lockFile d51e1ccd-r-courtenay-npm-yo-1-1-2-package /Users/tyler_courtenay/.npm/yo/1.1.2/package
+139 verbose lock /Users/tyler_courtenay/.npm/yo/1.1.2/package /Users/tyler_courtenay/.npm/d51e1ccd-r-courtenay-npm-yo-1-1-2-package.lock
+140 silly lockFile aa4484b8-urtenay-npm-yo-1-1-2-package-tgz /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+141 verbose lock /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz /Users/tyler_courtenay/.npm/aa4484b8-urtenay-npm-yo-1-1-2-package-tgz.lock
+142 silly gunzTarPerm modes [ '755', '644' ]
+143 silly gunzTarPerm extractEntry package.json
+144 silly gunzTarPerm extractEntry cli.js
+145 silly gunzTarPerm extractEntry yoyo.js
+146 silly gunzTarPerm extractEntry readme.md
+147 silly gunzTarPerm extractEntry scripts/doctor.js
+148 silly gunzTarPerm extractEntry yeoman.txt
+149 verbose read json /Users/tyler_courtenay/.npm/yo/1.1.2/package/package.json
+150 silly lockFile d51e1ccd-r-courtenay-npm-yo-1-1-2-package /Users/tyler_courtenay/.npm/yo/1.1.2/package
+151 silly lockFile d51e1ccd-r-courtenay-npm-yo-1-1-2-package /Users/tyler_courtenay/.npm/yo/1.1.2/package
+152 silly lockFile aa4484b8-urtenay-npm-yo-1-1-2-package-tgz /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+153 silly lockFile aa4484b8-urtenay-npm-yo-1-1-2-package-tgz /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+154 silly shasum updated bytes 7485
+155 info shasum a0d4da72e83fa0e0dbfe1d0ba258881b240ab854
+155 info shasum /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz
+156 verbose from cache /Users/tyler_courtenay/.npm/yo/1.1.2/package/package.json
+157 verbose chmod /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz 644
+158 verbose chown /Users/tyler_courtenay/.npm/yo/1.1.2/package.tgz [ 501, 20 ]
+159 silly lockFile b65dd06a-gistry-npmjs-org-yo-yo-1-1-2-tgz https://registry.npmjs.org/yo/-/yo-1.1.2.tgz
+160 silly lockFile b65dd06a-gistry-npmjs-org-yo-yo-1-1-2-tgz https://registry.npmjs.org/yo/-/yo-1.1.2.tgz
+161 silly lockFile c4df5c1e-yo-1-1-2 yo@1.1.2
+162 silly lockFile c4df5c1e-yo-1-1-2 yo@1.1.2
+163 silly lockFile d937c28e-yo yo@
+164 silly lockFile d937c28e-yo yo@
+165 silly resolved [ { name: 'grunt-cli',
+165 silly resolved     description: 'The grunt command line interface.',
+165 silly resolved     version: '0.1.13',
+165 silly resolved     author: { name: 'Grunt Team' },
+165 silly resolved     homepage: 'http://gruntjs.com/',
+165 silly resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt-cli.git' },
+165 silly resolved     bugs: { url: 'http://github.com/gruntjs/grunt-cli/issues' },
+165 silly resolved     licenses: [ [Object] ],
+165 silly resolved     bin: { grunt: 'bin/grunt' },
+165 silly resolved     engines: { node: '>= 0.8.0' },
+165 silly resolved     scripts: { test: 'node bin/grunt test' },
+165 silly resolved     preferGlobal: true,
+165 silly resolved     dependencies: { nopt: '~1.0.10', 'findup-sync': '~0.1.0', resolve: '~0.3.1' },
+165 silly resolved     devDependencies: { grunt: '~0.4.0', 'grunt-contrib-jshint': '~0.2.0' },
+165 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+165 silly resolved     readme: '# grunt-cli [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-cli.png?branch=master)](http://travis-ci.org/gruntjs/grunt-cli)\n> The Grunt command line interface.\n\nInstall this globally and you\'ll have access to the `grunt` command anywhere on your system.\n\n```shell\nnpm install -g grunt-cli\n```\n\n**Note:** The job of the `grunt` command is to load and run the version of Grunt you have installed locally to your project, irrespective of its version.  Starting with Grunt v0.4, you should never install Grunt itself globally.  For more information about why, [please read this](http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation).\n\nSee the [Getting Started](http://gruntjs.com/getting-started) guide for more information.\n\n## Shell tab auto-completion\nTo enable tab auto-completion for Grunt, add one of the following lines to your `~/.bashrc` or `~/.zshrc` file.\n\n```bash\n# Bash, ~/.bashrc\neval "$(grunt --completion=bash)"\n```\n\n```bash\n# Zsh, ~/.zshrc\neval "$(grunt --completion=zsh)"\n```\n\n## Installing grunt-cli locally\nIf you prefer the idiomatic Node.js method to get started with a project (`npm install && npm test`) then install grunt-cli locally with `npm install grunt-cli --save-dev`. Then add a script to your `package.json` to run the associated grunt command: `"scripts": { "test": "grunt test" } `. Now `npm test` will use the locally installed `./node_modules/.bin/grunt` executable to run your Grunt commands.\n\nTo read more about npm scripts, please visit the npm docs: [https://npmjs.org/doc/misc/npm-scripts.html](https://npmjs.org/doc/misc/npm-scripts.html).\n',
+165 silly resolved     readmeFilename: 'README.md',
+165 silly resolved     _id: 'grunt-cli@0.1.13',
+165 silly resolved     _from: 'grunt-cli@' },
+165 silly resolved   { name: 'bower',
+165 silly resolved     version: '1.3.9',
+165 silly resolved     description: 'The browser package manager',
+165 silly resolved     author: { name: 'Twitter' },
+165 silly resolved     licenses: [ [Object] ],
+165 silly resolved     repository: { type: 'git', url: 'bower/bower' },
+165 silly resolved     main: 'lib',
+165 silly resolved     homepage: 'http://bower.io',
+165 silly resolved     engines: { node: '>=0.10.0' },
+165 silly resolved     dependencies:
+165 silly resolved      { abbrev: '~1.0.4',
+165 silly resolved        archy: '0.0.2',
+165 silly resolved        'bower-config': '~0.5.2',
+165 silly resolved        'bower-endpoint-parser': '~0.2.2',
+165 silly resolved        'bower-json': '~0.4.0',
+165 silly resolved        'bower-logger': '~0.2.2',
+165 silly resolved        'bower-registry-client': '~0.2.0',
+165 silly resolved        cardinal: '~0.4.0',
+165 silly resolved        chalk: '~0.5.0',
+165 silly resolved        chmodr: '~0.1.0',
+165 silly resolved        'decompress-zip': '0.0.6',
+165 silly resolved        fstream: '~0.1.22',
+165 silly resolved        'fstream-ignore': '0.0.6',
+165 silly resolved        glob: '~4.0.2',
+165 silly resolved        'graceful-fs': '~3.0.1',
+165 silly resolved        handlebars: '~1.3.0',
+165 silly resolved        inquirer: '~0.5.1',
+165 silly resolved        insight: '~0.4.1',
+165 silly resolved        'is-root': '~0.1.0',
+165 silly resolved        junk: '~0.3.0',
+165 silly resolved        lockfile: '~0.4.2',
+165 silly resolved        'lru-cache': '~2.5.0',
+165 silly resolved        mkdirp: '~0.5.0',
+165 silly resolved        mout: '~0.9.1',
+165 silly resolved        nopt: '~3.0.0',
+165 silly resolved        opn: '~0.1.1',
+165 silly resolved        osenv: '~0.1.0',
+165 silly resolved        'p-throttler': '0.0.1',
+165 silly resolved        promptly: '~0.2.0',
+165 silly resolved        q: '~1.0.1',
+165 silly resolved        request: '~2.36.0',
+165 silly resolved        'request-progress': '~0.3.0',
+165 silly resolved        retry: '~0.6.0',
+165 silly resolved        rimraf: '~2.2.0',
+165 silly resolved        semver: '~2.3.0',
+165 silly resolved        'shell-quote': '~1.4.1',
+165 silly resolved        'stringify-object': '~0.2.0',
+165 silly resolved        tar: '~0.1.17',
+165 silly resolved        tmp: '0.0.23',
+165 silly resolved        'update-notifier': '~0.2.0',
+165 silly resolved        which: '~1.0.5' },
+165 silly resolved     devDependencies:
+165 silly resolved      { coveralls: '~2.11.0',
+165 silly resolved        'expect.js': '~0.3.1',
+165 silly resolved        grunt: '~0.4.4',
+165 silly resolved        'grunt-contrib-jshint': '~0.10.0',
+165 silly resolved        'grunt-contrib-watch': '~0.6.1',
+165 silly resolved        'grunt-exec': '~0.4.2',
+165 silly resolved        'grunt-simple-mocha': '~0.4.0',
+165 silly resolved        istanbul: '~0.2.4',
+165 silly resolved        'load-grunt-tasks': '~0.6.0',
+165 silly resolved        mocha: '~1.20.1',
+165 silly resolved        nock: '~0.41.0',
+165 silly resolved        'node-uuid': '~1.4.1',
+165 silly resolved        proxyquire: '~1.0.1' },
+165 silly resolved     scripts: { test: 'grunt test' },
+165 silly resolved     bin: { bower: 'bin/bower' },
+165 silly resolved     preferGlobal: true,
+165 silly resolved     readme: '# Bower\n\n[![Build Status](https://travis-ci.org/bower/bower.svg?branch=master)](https://travis-ci.org/bower/bower) [![Coverage Status](https://coveralls.io/repos/bower/bower/badge.png?branch=feature%2Fintegration)](https://coveralls.io/r/bower/bower?branch=feature%2Fintegration)\n\n<img align="right" height="300" src="http://bower.io/img/bower-logo.png">\n\n> A package manager for the web\n\nBower offers a generic, unopinionated solution to the problem of **front-end package management**, while exposing the package dependency model via an API that can be consumed by a more opinionated build stack. There are no system wide dependencies, no dependencies are shared between different apps, and the dependency tree is flat.\n\nBower runs over Git, and is package-agnostic. A packaged component can be made up of any type of asset, and use any type of transport (e.g., AMD, CommonJS, etc.).\n\n**View complete docs on [bower.io](http://bower.io)**\n\n[View all packages available through Bower\'s registry](http://bower.io/search/).\n\n## Install\n\n```sh\n$ npm install -g bower\n```\n\nBower depends on [Node.js](http://nodejs.org/) and [npm](http://npmjs.org/). Also make sure that [git](http://git-scm.com/) is installed as some bower\npackages require it to be fetched and installed.\n\n\n## Usage\n\nSee complete command line reference at [bower.io/docs/api/](http://bower.io/docs/api/)\n\n### Installing packages and dependencies\n\n```sh\n# install dependencies listed in bower.json\n$ bower install\n\n# install a package and add it to bower.json\n$ bower install <package> --save\n\n# install specific version of a package and add it to bower.json\n$ bower install <package>#<version> --save\n```\n\n### Using packages\n\nWe discourage using bower components statically for performance and security reasons (if component has an `upload.php` file that is not ignored, that can be easily exploited to do malicious stuff).\n\nThe best approach is to process components installed by bower with build tool (like [Grunt](http://gruntjs.com/) or [gulp](http://gulpjs.com/)), and serve them concatenated or using module loader (like [RequireJS](http://requirejs.org/)).\n\n### Uninstalling packages\n\nTo uninstall a locally installed package:\n\n```sh\n$ bower uninstall <package-name>\n```\n\n### prezto and oh-my-zsh users\n\nOn `prezto` or `oh-my-zsh`, do not forget to `alias bower=\'noglob bower\'` or `bower install jquery\\#1.9.1`\n\n### Running commands with sudo\n\nBower is a user command, there is no need to execute it with superuser permissions.\nHowever, if you still want to run commands with sudo, use `--allow-root` option.\n\n### Windows users\n\nTo use Bower on Windows, you must install\n[msysgit](http://msysgit.github.io/) correctly. Be sure to check the\noption shown below:\n\n![msysgit](http://f.cl.ly/items/2V2O3i1p3R2F1r2v0a12/mysgit.png)\n\nNote that if you use TortoiseGit and if Bower keeps asking for your SSH\npassword, you should add the following environment variable: `GIT_SSH -\nC:\\Program Files\\TortoiseGit\\bin\\TortoisePlink.exe`. Adjust the `TortoisePlink`\npath if needed.\n\n## Configuration\n\nBower can be configured using JSON in a `.bowerrc` file. Read over available options at [bower.io/docs/config](http://bower.io/docs/config).\n\n## Completion (experimental)\n\n_NOTE_: Completion is still not implemented for the 1.0.0 release\n\nBower now has an experimental `completion` command that is based on, and works\nsimilarly to the [npm completion](https://npmjs.org/doc/completion.html). It is\nnot available for Windows users.\n\nThis command will output a Bash / ZSH script to put into your `~/.bashrc`,\n`~/.bash_profile`, or `~/.zshrc` file.\n\n```sh\n$ bower completion >> ~/.bash_profile\n```\n\n## Analytics\n\nBower can collect anonymous usage statistics. This allows the community to improve Bower and publicly display insights into CLI usage and packages at [stats.bower.io](http://stats.bower.io).\n\nData is tracked using Google Analytics and instrumented via [Insight](https://github.com/yeoman/insight). It is made available to all bower team members. Tracking is opt-in upon initial usage. If you\'d prefer to disable analytics altogether, you can manually opt-out, or create either a local, or global `.bowerrc` file with:\n\n```json\n{\n  "analytics": false\n}\n```\n\n\n\n## Support\n\n* [StackOverflow](http://stackoverflow.com/questions/tagged/bower)\n* [Mailinglist](http://groups.google.com/group/twitter-bower) - twitter-bower@googlegroups.com\n* [\\#bower](http://webchat.freenode.net/?channels=bower) on Freenode\n\n\n## Contributing\n\nWe welcome contributions of all kinds from anyone. Please take a moment to\nreview the [guidelines for contributing](CONTRIBUTING.md).\n\n* [Bug reports](CONTRIBUTING.md#bugs)\n* [Feature requests](CONTRIBUTING.md#features)\n* [Pull requests](CONTRIBUTING.md#pull-requests)\n\n\n## Bower Team\n\nBower is made by lots of people across the globe, contributions large and small. Our thanks to everyone who has played a part.\n\n### Core team\n\n* [@satazor](https://github.com/satazor)\n* [@wibblymat](https://github.com/wibblymat)\n* [@paulirish](https://github.com/paulirish)\n* [@benschwarz](https://github.com/benschwarz)\n* [@sindresorhus](https://github.com/sindresorhus)\n* [@svnlto](https://github.com/svnlto)\n* [@sheerun](https://github.com/sheerun)\n\n### Bower Alumni\n\n* [@fat](https://github.com/fat)\n* [@maccman](https://github.com/maccman)\n\n\n## License\n\nCopyright (c) 2014 Twitter and other contributors\n\nLicensed under the MIT License\n',
+165 silly resolved     readmeFilename: 'README.md',
+165 silly resolved     _id: 'bower@1.3.9',
+165 silly resolved     _from: 'bower@' },
+165 silly resolved   { name: 'yo',
+165 silly resolved     version: '1.1.2',
+165 silly resolved     description: 'CLI tool for scaffolding out Yeoman projects',
+165 silly resolved     license: 'MIT',
+165 silly resolved     bin: { yo: 'cli.js' },
+165 silly resolved     repository: { type: 'git', url: 'yeoman/yo' },
+165 silly resolved     homepage: 'http://yeoman.io',
+165 silly resolved     author: { name: 'Chrome Developer Relations' },
+165 silly resolved     engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+165 silly resolved     scripts:
+165 silly resolved      { test: 'grunt',
+165 silly resolved        postinstall: 'node ./scripts/doctor',
+165 silly resolved        postupdate: 'node ./scripts/doctor' },
+165 silly resolved     files: [ 'cli.js', 'yoyo.js', 'yeoman.txt', 'scripts/' ],
+165 silly resolved     keywords:
+165 silly resolved      [ 'front-end',
+165 silly resolved        'development',
+165 silly resolved        'dev',
+165 silly resolved        'build',
+165 silly resolved        'web',
+165 silly resolved        'tool',
+165 silly resolved        'cli',
+165 silly resolved        'scaffold',
+165 silly resolved        'stack' ],
+165 silly resolved     dependencies:
+165 silly resolved      { 'yeoman-generator': '~0.16.0',
+165 silly resolved        nopt: '~2.1.1',
+165 silly resolved        lodash: '~2.4.1',
+165 silly resolved        'update-notifier': '~0.1.3',
+165 silly resolved        insight: '~0.3.0',
+165 silly resolved        'sudo-block': '~0.3.0',
+165 silly resolved        async: '~0.2.9',
+165 silly resolved        open: '0.0.4',
+165 silly resolved        chalk: '~0.4.0',
+165 silly resolved        findup: '~0.1.3',
+165 silly resolved        shelljs: '~0.2.6' },
+165 silly resolved     peerDependencies: { 'grunt-cli': '~0.1.7', bower: '>=0.9.0' },
+165 silly resolved     devDependencies:
+165 silly resolved      { grunt: '~0.4.2',
+165 silly resolved        mockery: '~1.4.0',
+165 silly resolved        'grunt-contrib-jshint': '~0.8.0',
+165 silly resolved        'grunt-contrib-watch': '~0.5.3',
+165 silly resolved        'grunt-mocha-test': '~0.8.1' },
+165 silly resolved     engineStrict: true,
+165 silly resolved     preferGlobal: true,
+165 silly resolved     readme: '# yo [![Build Status](https://secure.travis-ci.org/yeoman/yo.png?branch=master)](http://travis-ci.org/yeoman/yo)\n\nCLI tool for scaffolding out [Yeoman](https://github.com/yeoman/yeoman) projects.\n\n![](screenshot.png)\n\n\n## [Documentation](https://github.com/yeoman/yeoman/wiki)\n\n\n## Options\n\n- `--no-color` flag to disable colors.\n\n- `--[no-]insight` to toggle anonymous [Insight](https://github.com/yeoman/insight) tracking which helps us improve Yeoman. Using either of these flags on the first run will prevent you from being prompted about it interactively. The flags can also be used to change it later on.\n\n\n## Troubleshooting\n\nRunning `yo doctor` command can help you troubleshoot common issues.\n\nIf `doctor` doesn\'t help, then check opened issues for a similar problem. Open a new issue if your problem haven\'t been reported yet. Make sure to always include the version of `yo` (`yo --version`) and Node.js (`node --version`) you use.\n\nIf your issue only occur using a generator, please report the issues on the generator\'s repository.\n\n## Contribute\n\nSee the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md).\n\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php) and copyright Google.\n',
+165 silly resolved     readmeFilename: 'readme.md',
+165 silly resolved     _id: 'yo@1.1.2',
+165 silly resolved     dist: { shasum: 'a0d4da72e83fa0e0dbfe1d0ba258881b240ab854' },
+165 silly resolved     _from: 'yo@',
+165 silly resolved     _resolved: 'https://registry.npmjs.org/yo/-/yo-1.1.2.tgz' } ]
+166 info install grunt-cli@0.1.13 into /usr/local/share/npm/lib
+167 info install bower@1.3.9 into /usr/local/share/npm/lib
+168 info install yo@1.1.2 into /usr/local/share/npm/lib
+169 info installOne grunt-cli@0.1.13
+170 info installOne bower@1.3.9
+171 info installOne yo@1.1.2
+172 verbose from cache /Users/tyler_courtenay/.npm/grunt-cli/0.1.13/package/package.json
+173 info /usr/local/share/npm/lib/node_modules/grunt-cli unbuild
+174 verbose read json /usr/local/share/npm/lib/node_modules/grunt-cli/package.json
+175 verbose from cache /Users/tyler_courtenay/.npm/bower/1.3.9/package/package.json
+176 info /usr/local/share/npm/lib/node_modules/bower unbuild
+177 verbose read json /usr/local/share/npm/lib/node_modules/bower/package.json
+178 verbose from cache /Users/tyler_courtenay/.npm/yo/1.1.2/package/package.json
+179 info /usr/local/share/npm/lib/node_modules/yo unbuild
+180 verbose read json /usr/local/share/npm/lib/node_modules/yo/package.json
+181 info preuninstall grunt-cli@0.1.13
+182 info /usr/local/share/npm/lib/node_modules/yo unbuild
+183 verbose read json /usr/local/share/npm/lib/node_modules/yo/package.json
+184 info uninstall grunt-cli@0.1.13
+185 verbose true,/usr/local/share/npm/lib/node_modules,/usr/local/share/npm/lib/node_modules unbuild grunt-cli@0.1.13
+186 verbose /usr/local/share/npm/bin,[object Object] binRoot
+187 info postuninstall grunt-cli@0.1.13
+188 error error rolling back Error: EACCES, unlink '/usr/local/share/npm/lib/node_modules/yo/node_modules'
+188 error error rolling back  yo@1.1.2 { [Error: EACCES, unlink '/usr/local/share/npm/lib/node_modules/yo/node_modules']
+188 error error rolling back   errno: 3,
+188 error error rolling back   code: 'EACCES',
+188 error error rolling back   path: '/usr/local/share/npm/lib/node_modules/yo/node_modules' }
+189 error Error: EACCES, unlink '/usr/local/share/npm/lib/node_modules/yo/node_modules'
+189 error  { [Error: EACCES, unlink '/usr/local/share/npm/lib/node_modules/yo/node_modules']
+189 error   errno: 3,
+189 error   code: 'EACCES',
+189 error   path: '/usr/local/share/npm/lib/node_modules/yo/node_modules' }
+190 error Please try running this command again as root/Administrator.
+191 error System Darwin 12.4.0
+192 error command "/usr/local/Cellar/node/0.10.3/bin/node" "/usr/local/bin/npm" "install" "-g" "yo" "grunt-cli" "bower"
+193 error cwd /Users/tyler_courtenay/Dropbox/whos-down
+194 error node -v v0.10.3
+195 error npm -v 1.2.17
+196 error path /usr/local/share/npm/lib/node_modules/yo/node_modules
+197 error code EACCES
+198 error errno 3
+199 error stack Error: EACCES, unlink '/usr/local/share/npm/lib/node_modules/yo/node_modules'
+200 verbose exit [ 3, true ]
